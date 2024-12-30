@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Support Website</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Menghubungkan styles.css -->
+    <style>
+        #timer-display {
+            font-size: 8em; /* Ukuran font yang lebih besar */
+            font-weight: bold; /* Menebalkan angka */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WEBSITE BELAJAR</h1>
+    </header>
+
+    <main>
+        <!-- Pomodoro Timer Section -->
+        <section id="pomodoro">
+            <h2>Pomodoro Timer</h2>
+            <div>
+                <label for="work-time">Waktu Belajar (menit):</label>
+                <input type="number" id="work-time" value="25">
+            </div>
+            <div>
+                <label for="break-time">Waktu Istirahat (menit):</label>
+                <input type="number" id="break-time" value="5">
+            </div>
+            <button id="start-timer">Mulai</button>
+            <p id="timer-display">25:00</p>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section id="todo">
+            <h2>To-Do List</h2>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Tambah Tugas baru...">
+                <button type="submit">Tambah</button>
+            </form>
+            <ul id="todo-list">
+                <!-- To-Do Items Will Appear Here -->
+            </ul>
+        </section>
+        
+        <!-- Spotify Widget -->
+    <div class="spotify-widget">
+        <iframe 
+            style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/6f4KpaM8QkchyryimV4D9g?utm_source=generator" 
+            width="80%" 
+            height="80" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024. All Right Reserved</p>
+    </footer>
+
+    <!-- Script Files -->
+    <script src="js/pomodoro.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/spotify.js"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+</body>
+</html>
